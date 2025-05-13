@@ -1,0 +1,289 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[nottoc, notbib, notlof]{tocbibind}
+\usepackage{url}
+\usepackage[colorlinks=true]{hyperref}
+
+\renewcommand{\baselinestretch}{1.15}
+
+\parindent 0ex
+
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\begin{LARGE}
+{\color{red} \textbf{Title}}  \\[2\baselineskip]
+\end{LARGE}
+
+\begin{large}
+submitted in partial fulfillment of the requirements \\
+for the course of MA-308 (Mini Project) \\ 
+in \\
+3$^{\text{rd}}$ Year (6$^{\text{th}}$) Semester of \\[1\baselineskip]
+\end{large}
+
+\begin{center}
+\includegraphics[scale=1]{Master of Science}
+\end{center}
+
+
+(Five Year Integrated Program) \\
+in Mathematics \\
+
+submitted by  \\[1\baselineskip]
+
+{\color{red} \textbf{Name of $1^{\text{st}}$ Student \\
+Name of $2^{\text{nd}}$ Student \\
+Name of $3^{\text{rd}}$ Student}}
+
+
+\vspace{1\baselineskip}
+
+under the supervision of \\
+{\color{red} \textbf{Name of Supervisor} \\
+Designation of Supervisor} \\[2\baselineskip]
+
+\includegraphics[scale=0.1]{SVNIT Logo} \\[2\baselineskip]
+
+\begin{large}
+\textbf{DEPARTMENT OF MATHEMATICS AND HUMANITIES \\
+SARDAR VALLABHBHAI NATIONAL INSTITUTE OF TECHNOLOGY \\
+SURAT-395007, GUJARAT, INDIA \\[1\baselineskip]
+{\color{red} Month Year}}
+\end{large}
+\end{center}
+\end{titlepage}
+
+
+
+\newpage
+\pagenumbering{roman}
+
+\begin{minipage}{0.3\linewidth}
+\begin{tabular}{r}
+\includegraphics[scale=0.1]{SVNIT Logo}
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+\begin{center}
+\begin{large}
+\textbf{Department of Mathematics and Humanities} \\
+Sardar Vallabhbhai National Institute of Technology \\
+(An Institute of National Importance, NITSER Act 2007) \\
+Surat-395007, Gujarat, India.
+\end{large}
+\end{center}
+\end{minipage}
+
+\begin{center}
+\hrulefill \\
+\vspace*{-0.5cm}
+
+\hrulefill
+\end{center}
+
+\vspace{1\baselineskip}
+\begin{center}
+{\color{blue} \begin{large}
+APPROVAL SHEET
+\end{large}} \\[2\baselineskip]
+\end{center}
+
+Report entitled $``$\textbf{{\color{red} Name of Title}}" by {\color{red} Name of $1^{\text{st}}$ Student}, {\color{red} Name of $2^{\text{nd}}$ Student}, {\color{red} Name of $3^{\text{rd}}$ Student} is approved for the completion of course MA-308 (Mini Project) for the degree of Master of Science in Mathematics. \\[2\baselineskip]
+
+\begin{flushright}
+{\color{red} Signature of Internal Examiner} \\
+\line(1,0){125} \\
+{\color{red} Name of Internal Examiner} \\
+(\textbf{Internal Examiner}) \\[2\baselineskip]
+
+{\color{red} Signature of Supervisor} \\
+\line(1,0){125} \\
+{\color{red} Name of Supervisor} \\
+(\textbf{Supervisor}) \\[2\baselineskip]
+
+{\color{red} Signature of Chairman} \\
+\line(1,0){125} \\
+{\color{red} Name of Chairman} \\
+(\textbf{Chairman}) \\[2\baselineskip]
+\end{flushright}
+
+Date: 25/05/2001 \\
+Place: Surat
+
+
+
+\newpage
+
+
+\begin{minipage}{0.3\linewidth}
+\begin{tabular}{r}
+\includegraphics[scale=0.1]{SVNIT Logo}
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+\begin{center}
+\begin{large}
+\textbf{Department of Mathematics and Humanities} \\
+Sardar Vallabhbhai National Institute of Technology \\
+(An Institute of National Importance, NITSER Act 2007) \\
+Surat-395007, Gujarat, India.
+\end{large}
+\end{center}
+\end{minipage}
+
+\begin{center}
+\hrulefill \\
+\vspace*{-0.5cm}
+
+\hrulefill
+\end{center}
+
+%\vspace{1\baselineskip}
+\begin{center}
+{\color{blue} \begin{large}
+DECLARATION
+\end{large}} \\[1\baselineskip]
+\end{center}
+
+We hereby declare that the report entitled $``${\color{red}Title}" is a genuine record of work carried out by us and no part of this report has been submitted to any University or Institution for the completion of any course. \\[2\baselineskip]
+
+
+{\color{red} Signature of $1^{\text{st}}$ Student} \\
+{\color{red} Name of $1^{\text{st}}$ Student} \\
+Admission No.: {\color{red} Admission No. of $1^{\text{st}}$ Student} \\
+Department of Mathematics and Humanities \\
+Sardar Vallabhbhai National Institute of Technology \\
+Surat-395007 \\[1\baselineskip]
+
+{\color{red} Signature of $2^{\text{nd}}$ Student} \\
+{\color{red} Name of $2^{\text{nd}}$ Student} \\
+Admission No.: {\color{red} Admission No. of $2^{\text{nd}}$ Student} \\
+Department of Mathematics and Humanities \\
+Sardar Vallabhbhai National Institute of Technology \\
+Surat-395007 \\[1\baselineskip]
+
+{\color{red} Signature of $3^{\text{rd}}$ Student} \\
+{\color{red} Name of $3^{\text{rd}}$ Student} \\
+Admission No.: {\color{red} Admission No. of $3^{\text{rd}}$ Student} \\
+Department of Mathematics and Humanities \\
+Sardar Vallabhbhai National Institute of Technology \\
+Surat-395007 \\[1\baselineskip]
+
+Date: {\color{red} Date} \\
+Place: Surat
+
+
+\newpage
+
+\begin{minipage}{0.3\linewidth}
+\begin{tabular}{r}
+\includegraphics[scale=0.1]{SVNIT Logo}
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+\begin{center}
+\begin{large}
+\textbf{Department of Mathematics and Humanities} \\
+Sardar Vallabhbhai National Institute of Technology \\
+(An Institute of National Importance, NITSER Act 2007) \\
+Surat-395007, Gujarat, India.
+\end{large}
+\end{center}
+\end{minipage}
+
+\begin{center}
+\hrulefill \\
+\vspace*{-0.5cm}
+
+\hrulefill
+\end{center}
+
+\vspace{3\baselineskip}
+\begin{center}
+{\color{blue} \begin{large}
+CERTIFICATE
+\end{large}} \\[3\baselineskip]
+\end{center}
+
+This is to certify that the course's report entitled $``${\color{red}Title}" submitted by {\color{red} $1^{\text{st}}$ Student}, {\color{red} $2^{\text{nd}}$ Student} and {\color{red} $3^{\text{rd}}$ Student} in fulfilment for the completion of course of MA 308: Mini Project at Sardar Vallabhbhai National Institute of Technology, Surat is record of their work carried out under my supervision and guidance. \\[9\baselineskip]
+
+
+
+
+{\color{red} Signature of Supervisor} \\
+{\color{red} Name of Supervisor} \\
+{\color{red} Designation of Supervisor} \\
+Department of Mathematics and Humanities \\
+Sardar Vallabhbhai National Institute of Technology \\
+Surat-395007 \\[3\baselineskip]
+
+Date: {\color{red} Date} \\
+Place: Surat
+																				
+\newpage
+
+\vspace*{3\baselineskip}
+\begin{center}
+\begin{LARGE}
+{\color{blue} Acknowledgment} \\[3\baselineskip]
+\end{LARGE}
+\end{center}
+
+We are very grateful as students of 5 Years Integrated M.Sc. in Mathematics at Sardar Vallabhbhai National Institute of Technology, Surat. First, we would like to express our genuine appreciation to our supervisor {\color{red} Name of Supervisor} for {\color{red} his/her} guidance for our work. To work with {\color{red} him/her} is a great opportunity and pleasure to us. We are thankful for {\color{red} Name of Director, SVNIT}, Director of SVNIT and {\color{red} Name of the Head of Department}, Head of Department of Mathematics and Humanities and all other Faculties, Research Scholars and Non-Teaching staff of our department for their regular inspiration and co-activity. \\[1\baselineskip]
+
+{\color{red} Acknowledgment of $1^{\text{st}}$ Student} \\
+\begin{flushright}
+\textit{({\color{red} Name of $1^{\text{st}}$ Student})}\\[1\baselineskip]
+\end{flushright} 
+
+{\color{red} Acknowledgment of $2^{\text{nd}}$ Student} \\
+\begin{flushright}
+\textit{({\color{red} Name of $2^{\text{nd}}$ Student})}\\[1\baselineskip]
+\end{flushright} 
+
+{\color{red} Acknowledgment of $3^{\text{rd}}$ Student} \\
+\begin{flushright}
+\textit{({\color{red} Name of $3^{\text{rd}}$ Student})}\\[1\baselineskip]
+\end{flushright} 
+
+\newpage
+
+\vspace*{3\baselineskip}
+\begin{center}
+\begin{LARGE}
+{\color{blue} Preface} \\[3\baselineskip]
+\end{LARGE}
+\end{center}
+
+\newpage 
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+
+\chapter{Instructions}
+
+Group should include all the details which are highlighted in Red Color at specific parts. Text which was mentioned in Black Color shouldn't be altered/distorted by any means. Team should include the following contents apart from the content provided in the document.
+\begin{enumerate}
+\item Chapters
+\item Sections/Subsections etc.
+\item References should be cited using \textit{plainurl} bibliographystyle.
+\end{enumerate}
+
+\end{document}
